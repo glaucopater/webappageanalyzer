@@ -24,8 +24,7 @@ class InputForm extends Component {
   }
 	 
   
-	fetchData = (url) => {					 
-			console.log("fetchData");			
+	fetchData = (url) => {	 			
 			axios.get('/api/crawle/?link='+ url)
             .then( response => { 	
                 const info = response.data.info;  
@@ -45,7 +44,7 @@ class InputForm extends Component {
                 
                 if(this.state.internalLinks.length>0){
                      let links = this.state.internalLinks;
-                     links = links.slice(0,10);
+                     
                      axios.get('/api/checkLinks', {params:
                                                   {links:links}})
                       .then(res => {  
@@ -54,8 +53,7 @@ class InputForm extends Component {
                 }
                 
                 if(this.state.externalLinks.length>0){
-                     let links = this.state.externalLinks;
-                     links = links.slice(0,10);
+                     let links = this.state.externalLinks; 
                      axios.get('/api/checkLinks', {params:
                                                   {links:links}})
                       .then(res => {  
@@ -138,13 +136,13 @@ class InputForm extends Component {
         
         if(aliveInternalLinks) {
                 externalLinksResults = <Information 
-                    name="Internal Links"  
+                    name="Alive Internal Links "  
                     value={aliveInternalLinks} />           
             }
             
         if(aliveExternalLinks) {
                 externalLinksResults = <Information  
-                    name="External Links"  
+                    name="Alive External Links"  
                     value={aliveExternalLinks} />           
             } 
 			
