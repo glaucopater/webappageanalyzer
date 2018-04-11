@@ -1,6 +1,16 @@
 Documentation
 ===
 
+
+Web Page Information analyzed
+---
+* Doctype for HTML version 
+* Page Title from Head tag
+* Headings (h1,h2,h3,h4,h5,h6) and related quantity
+* Internal links and external links parsing href properties of "a" tags (duplicated links are removed).
+* Simple heuristic to find a login form (the page should contain a form element with an input password field )
+
+
 How to use the downloaded files
 ===
 
