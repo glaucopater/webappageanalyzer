@@ -1,0 +1,12 @@
+.Information {  
+    box-shadow: 0 2px 3px #ccc;
+    margin: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+.Information tr {
+	padding: 3px;
+}
+ 
