@@ -23,7 +23,7 @@ How to use the downloaded files
 
 -  cheerio: for HTML parsing, useful for dynamic content
 -  express 
--  request-promise, async:  for async calls
+-  request-promise, async: for async calls
 
 ## Package used on frontend side
 
